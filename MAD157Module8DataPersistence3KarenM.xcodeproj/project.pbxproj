@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A42E445252D037400AD6156 /* blueGuitar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A42E444252D037400AD6156 /* blueGuitar1.png */; };
 		3A54E1A4252C01E8007F3267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54E1A3252C01E8007F3267 /* AppDelegate.swift */; };
 		3A54E1A6252C01E8007F3267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54E1A5252C01E8007F3267 /* SceneDelegate.swift */; };
 		3A54E1A8252C01E8007F3267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54E1A7252C01E8007F3267 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A42E444252D037400AD6156 /* blueGuitar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueGuitar1.png; sourceTree = SOURCE_ROOT; };
 		3A54E1A0252C01E8007F3267 /* MAD157Module8DataPersistence3KarenM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAD157Module8DataPersistence3KarenM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A54E1A3252C01E8007F3267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A54E1A5252C01E8007F3267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				3A54E1A7252C01E8007F3267 /* ViewController.swift */,
 				3A54E1A9252C01E8007F3267 /* Main.storyboard */,
 				3A54E1AF252C01E9007F3267 /* Assets.xcassets */,
+				3A42E444252D037400AD6156 /* blueGuitar1.png */,
 				3A54E1B1252C01E9007F3267 /* LaunchScreen.storyboard */,
 				3A54E1B4252C01E9007F3267 /* Info.plist */,
 				3A54E1AC252C01E8007F3267 /* MAD157Module8DataPersistence3KarenM.xcdatamodeld */,
@@ -131,6 +134,7 @@
 				3A54E1B3252C01E9007F3267 /* LaunchScreen.storyboard in Resources */,
 				3A54E1B0252C01E9007F3267 /* Assets.xcassets in Resources */,
 				3A54E1AB252C01E8007F3267 /* Main.storyboard in Resources */,
+				3A42E445252D037400AD6156 /* blueGuitar1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
