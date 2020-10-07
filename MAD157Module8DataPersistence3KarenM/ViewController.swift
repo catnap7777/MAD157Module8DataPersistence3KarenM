@@ -13,7 +13,7 @@ import CoreData
 class ViewController: UIViewController {
     
     @IBOutlet var enterGuitarDescription: UITextField!
-    @IBOutlet var displayDataHere: UILabel!
+    @IBOutlet var dispDataHere: UITextView!
     
     var dataManager : NSManagedObjectContext!
     //.. array to hold the database info for loading/saving
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         dataManager = appDelegate.persistentContainer.viewContext
-        displayDataHere.text?.removeAll()
+        dispDataHere.text?.removeAll()
         //.. get any initial data if there is some
         fetchData()
     }
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         } catch{
             print ("Error saving data")
         }
-        displayDataHere.text?.removeAll()
+        dispDataHere.text?.removeAll()
         enterGuitarDescription.text?.removeAll()
         //.. refetch data to redisplay
         fetchData()
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
             } catch {
                 print ("Error deleting data")
             }
-            displayDataHere.text?.removeAll()
+            dispDataHere.text?.removeAll()
             enterGuitarDescription.text?.removeAll()
             //.. refetch data to redisplay text field
             fetchData()
@@ -91,14 +91,18 @@ class ViewController: UIViewController {
             //.. for each item in the array, do the following..
             for item in listArray {
                 //.. get the value for "about" (attribute/field "about" in xcdatamodeld) and set it equal to var product
-                let product = item.value(forKey: "about") as! String
+                var product = item.value(forKey: "about") as! String
                 //.. do a simple concatenation to show all products that were fetched from db
-                displayDataHere.text! += product
-
+                
+//                displayDataHere.text! += product
+                print("product = \(product)")
+                dispDataHere.text! += ("\(product)\n")
+                
             }
         } catch {
             print ("Error retrieving data")
         }
+        
     }
 
 
