@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         dispDataHere.text?.removeAll()
         //.. get any initial data if there is some
         fetchData()
+        
+        print("Documents Directory: ", FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last ?? "Not Found!")
     }
     
     //.. save to db
